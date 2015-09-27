@@ -18,7 +18,7 @@ img {
 h2 {
 color: red;
 font-weight: bold;
-margin-left: 19em;
+margin-left:26em;
 }
 h3{
 
@@ -32,8 +32,8 @@ nav {
 
 font-size: 12px;
 color: blue;
-text-align: right;
-margin-right: 2em;
+text-align: center;
+
 }
 
 p.line {
@@ -54,7 +54,7 @@ background-color: beige;
 
 
 img {
-margin-left: 28em;
+margin-left: 37em;
 }
 
 
