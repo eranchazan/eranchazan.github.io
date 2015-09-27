@@ -1,0 +1,30 @@
+body {
+
+	margin: 15em, 15em, 15em, 15em;
+	background-color: beige; 
+}
+h1 {
+	color:black;
+	text-decoration: underline; 
+}
+
+h2 {
+
+color: red;
+font-size: 18px;
+font-weight: bold;
+position: relative;
+left: 20px;
+position: relative;	
+left:15em;
+}
+
+
+footer {
+color: purple;
+}
+
+#blog-1 {
+position: inline;
+
+}
