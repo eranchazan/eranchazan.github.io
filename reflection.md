@@ -1,7 +1,7 @@
 
 
-<a href="index.html"></a>
-<a href="blog.index.html"></a>
+![index page](blog/index.html)
+![blog index page](blog.index.html)
 
 What did you learn about CSS padding, borders, and margin by doing this challenge?
 Padding is the content of your element itself. Borders are the boundaries of the element. Margins are the spaces between the element and others around it. 
