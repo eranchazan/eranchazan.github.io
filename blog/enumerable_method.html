@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>My 5th Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Blog 5</h1>
+  <h2>Assignment 3.6</h2>
+  <h4>10.12.15</h4>
+
+  <section>
+   <p>The Enumerable Methods </p>
+   	  .map Enumerable 	
+  <p>
+  	To begin with the Enumerable is the name of a module in Ruby whose presence is inherently given to the array and hash class.
+	A module is like a library, a container full of methods that can be used by an object at any time. In Ruby, Enumerable means to have acess via methods like .each to get elements out of a collection one at a time. An "enumerator" is the tool you can use to get each element out of a collection in this way. Collection objects in Ruby typically include the Enumerable module. 
+ 
+	Exanmple: [4,8,15,16,23,42].each {|e| puts e}
+	=> 4,8,15,16,23,42
+
+	[4,8,15].each {|e| puts e + 1}
+	=> 5, 9, 16 
+  </p>
+  <p>
+  	Enumerator is a class which allows both internal and external iterations. 
+
+	Enumerator is the objectification of enumeration. In others words enumeration is the process of taking each element in a series of elements --in an array or hash-- and storing each individual element in a new object that can be maniplated by a chain of methods thus outputing a new array or hash objects containing the new element values.
+  </p>
+  <p>
+  Enumerable .map
+
+	The .map enumerator is a method that invokes a given block on each element of a given object and returns a new array containing the new values returned from the block. If no block is given with the enumertor, then the enumerator is return instead. The .map input and output is an array and doesn't delete the original array inputed. The outputed array is an array with all the outputed elements that were run through the code block in one single array. If you do want to change permanently then you use the .map! method. 
+	a.map {|x| x + "!"}
+	a=> Enumerator
+  </p>
+  <p>
+  	 A synonym for .map is .collect. You'll see these two used interchangeably.  
+
+	ary.collect {|item| block } → new_ary
+	ary.map {|item| block } → new_ary
+	ary.collect → an_enumerator
+	ary.map → an_enumerator
+  </p>
+
+  </section>
+</main> 
