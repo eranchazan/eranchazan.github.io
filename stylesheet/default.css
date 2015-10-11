@@ -1,5 +1,4 @@
 h1	{
-
 color: purple;
 font-weight: bold;
 font-style: italic;
@@ -9,17 +8,18 @@ text-align: center;
 padding: 20px;
 
 }
-
+h2 {
+color: red;
+font-weight: bold;
+position: center;
+float: center;
+}
 
 img {
 	margin-left: 40em;
 }
 
-h2 {
-color: red;
-font-weight: bold;
-margin-left:26em;
-}
+
 h3{
 
 color: green;
@@ -43,10 +43,10 @@ p.line {
 
 
 footer {
-
 color: orange;
 text-align: center;
 }
+
  body {
 background-color: beige;
 
@@ -56,6 +56,10 @@ background-color: beige;
 img {
 margin-left: 34em;
 }
+
+
+
+
 
 
 
