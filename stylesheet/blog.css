@@ -1,11 +1,13 @@
 body {
-
-	margin: 15em, 15em, 15em, 15em;
-	background-color: beige; 
+	
+margin: 15em, 15em, 15em, 15em;
+background-color: beige; 
 }
 h1 {
-	color:black;
-	text-decoration: underline; 
+
+color:black;
+text-decoration: underline;
+position: center; 
 }
 
 h2 {
@@ -13,18 +15,17 @@ h2 {
 color: red;
 font-size: 18px;
 font-weight: bold;
-position: relative;
-left: 20px;
-position: relative;	
-left:15em;
+margin-left: 30em;
 }
 
 
 footer {
+
 color: purple;
 }
 
 #blog-1 {
+
 position: inline;
 
 }
