@@ -12,18 +12,59 @@
 
   <section>
    <p>Ruby Classes</p>
-   	  	
-  <p>
-  	
+   <p>
+   In Ruby you can create "blueprints" or prepackaged frames for your data to live in. The code you write can be given these "prepackaged frames" when it is born, and uses it throughout its lives. Each bit of data inside one of these frames is called an Object. You can think of an object like a person, and a Class as that person's ethnic group. An object in Ruby--like a person in real life--shares innate characteristics with many others like it. However, an object can also have individual characteristics seperate from those in its class (or ethnic group). You define an object by: variable name = Class name.new e.g. joe = Person.new
+   </p>
+   <p>
+   Classes allow us to not have define the same methods over and over again each time we create a new instance of that class. Clases are great for organizational reasons too because it places stuff that relates to one another in one place. It can hide away logic that you don't want to see whe you call a method. 
+   </p>
+   <P>
+    An instance method is a function innately given to every Object of the class it is defined in. It's analogous to every giraffe given the innate characteristic of having a long neck, or a shark with big teeth. Every instance of a class will be born with prepackaged methods in it. 
+    </P>
+    <p>
+    An instance variable is the same as a instance method but instead of it being a method, it is a variable. An instance variable is the storage and retrieval mechanism for values. These variables enable individual objects to remember their state, and are only visible to the object it is born in. Each object in the class an instance variable is born in gets a separate copy of it. Also, every method in the class the instance variable is born in has access to use it, in other words it maintains its existance between method calls. Instance variables are born when its parent object is born, and dies when its parent object dies. All instance variables are preceded with the '@' symbol.  
+  </p>
+   <p>
+    Class Dog  "<== Class"
+      def initialize  "<== Instance method" 
+        @breed = breed "<==Instance variable"
+        @age = age  "<==Instance variable"
+      end   
+      def breed  "<== Instance method/Getter method"
+        @breed
+      end
+      def age "<== Instance method" "<== Instance method/Getter method"
+        @age
+      end
+    end
   </p>
   <p>
-  	
-  <p>
-  
-  </p>
-  <p>
-  	 
-  </p>
+    Ruby provides a built-in shortcut that automatically creates a method that reades and returns the values of the instance variables declared in the initialized method. These shortcuts are called:
+    attr_read "<== To be able to gain access and read the instance variables and therefor access the state of object."
+    attr_writter "<== To be able to access and change the instance variable"
+    attr_accessor "<==" To be able to read and change instance variable"
 
+    You add the attr_... just below the fist line that declares the name of the class. Also, the instance variable the attr_... is getting acces to is converted into a symbol and therefor gets a colon placed in front of it,                                e.g. class Tree attr_accessor :leaves 
+
+    e.g. 
+    class Dog
+    attr_accessor :breed, :age
+    end  
+  </p>
+  <p>
+  Inheritance is a kind of downward chaining relationship between two classes whereby one inherits from another and the instances of the subclass acquire the behavior, i.e the methods, defined in the superclass. 
+  e.g.
+  class Animal
+    attr_accessor :teeth
+  end
+  class Dog < Animal  <== The < designates Dog as a subclass of animal.
+    attr_accessor :fur <== Clas Dog has the :fur met hod and inherits the :teeth method innately. 
+  end
+  It is important to know that every Ruby class can only have one superclass. 
+  </p>
+  <p>
+  And lastly there are Class Variables: they are prefixed with two @@, and there's only one value, not one for every instance. They are tied to the class and not any variables, and can only operate on class variables and whatever arguments are supplied to them when called Also, there are Class Methods: methods that are called directly through the class and not through any instances. e.g. Math.log()<==Math is the class, .log() is the class method. 
+
+  </p>
   </section>
 </main> 
