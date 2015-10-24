@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>My Blog</title>
+	</head>
+<main>
+<h1>Blog 7</h1>
+<h2> Assignment 7.10 </h2>
+<h4>10.26.2015</h4>
+
+<section>
+<p>Ruby classes vs. JavaScript constructor functions</p>	
+<p>
+The majority of object-oriented languages use classes to create objects and define the behavior of that object. Ruby is an object-oriented language that does, while JavaScript is an object-oriented language that does not. Classes may be objects themselves, but if so they're different from other types of objects. Inside a class object you will find all the methods needed to declare an instance of that class i.e an object, as well as all the functional behaviors that each object inherits by being declared in that class, in other words you'll find instance variables  and instance methods. The initialize method is the method that actually creates new methods. It is in this function where you can have default values for instance variables whereby each object will get a separate copy of that variable. </p>
+<p> <u>Ruby Class</u>
+				Class Employee
+				def initialize(name, salary, hire_year)
+				@name = name	
+				@salary = salary
+				@hire_year = hire_year
+				end
+
+				def to_s 
+				"Name is #{@name}, salary is #{@salary}"	
+				"hire year is #{hire_year}"
+				end
+
+				def raise_salary_by(perc)
+				@salary += (@salary * 0.10)
+				end
+		    end 
+</p>
+<p>
+	JavaScript has objects but no classes. Thus there's no special syntax for defining how to create an instance or define its behavior. JavaScript objects (or instances) are created with a constructor. The constructor of an object (or instance) is a function that is inovoked with the <b>new</b> operator. In JavaScript, any function can be a constructor--even though it may not look like one. 
+</p>
+<p>A Normal Function</p>
+<p> function sqaure (n) {return n * n} </p>
+
+<p>The Equivalent Constructor Function</p>
+<p> function square(n) {
+	this.n = n;      ----> var number = new number(5);	
+}
+</p>
+<p>
+	How does JavaScript define behavior of objects? JavaScript doesn't have a special syntax or special kind of object for that, it has instead uses functions to double as <b>object constructors</b> also called prototypes. Constructors have no special methods or properties associated with them. Any object can be a constructor (prototype), even a DOM object and an empty object. An empty object is actually what is associated with a constructor by default.  
+</p>
+<p>Constructor</p>
+<p>
+	function Athlete(name, age, sport, quote)
+		this.name = name
+		this.sport = sport
+		this.quote = quote
+		};            ------> var Michael Jordan = new Athlete("Michael Jordan", 53, basketball, "Fear is an illusion")
+</p>
+</section>
+</main>
+</html>
