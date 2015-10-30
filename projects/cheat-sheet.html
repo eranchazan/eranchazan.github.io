@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8.7 Solo Challenge Cheat Sheet</title>
+	<link rel="stylesheet" type="text/css" href=../"stylesheets/cheat-sheet.css">
+</head>
+<body>
+ <div id="container">
+ <h1>Looping in Ruby and JavaScript (comparisons)</h1>
+   <div id="ruby">
+   <p>The simplest way to create a loop in Ruby is using the keyword loop. Loop takes a block, which is denoted {...} or do...end. A loop will execute any code within the block until you manually intervene  with such keyworfds as the <b>break</b>statement.Inside the block is wher you can create conditional arguments like if() and else() statements. It is also where you can use enumerable properties to iterate through things such as asrrays and hashes.</p>
+  	<p> The <b>while</b> loop is given a parameter that evaluates to a boolean. Once the boolean expression becomes false, the loop will is not executed again</p>
+  	<p>
+$i = 0<br> $num = 5<be> while $i &lt; $num  do<br>puts("Inside the loop i = #$i" )<br>$i +=1</br>end</p>
+  	<p>The <b>for</b>loop is used to loop over a collection of elements. Unlike a while loop whwere if we're not careful we can cause an infinite loop, for loops have a definite end sicne it's looping over a finite number of elements. It begins with the <b>for</b> reserved word, followed by a variable, then the <b>in</b> reserved word, and then a collection of elements.</p>
+  	<p>
+  		<b>for</b> variable [, variable ...] in expression [do]</b>code</b>end
+  	</p>
+  	<p>The <b>until</b> loop is simply the opposite of the <b>while</b> loop. It runs until something is true. In other words it's anothe way to phrase the problem of a while loop.</p>
+  	<p>until conditional [do]<br>code<br>end</p>
+  	<p>A <b>do/while</b> loop is very similar to a while loop, with the only difference being that the code within the loop gets executed one time, prior to the conditional check to see if the code should be executed. In a "do/while" loop, the conditional check is placed at the end of the loop as opposed to the beginning.</p>	
+  	<p><b>Iterators</b> are methods that naturally loop over a given set of data and allow you to operate on each element in the collection. There are many in Ruby but the most common are <b>.each .map .inject .times</b>
+    </p>
+    <p>
+    	names = ['Bob', 'Joe', 'Steve', 'Janice', 'Susan', 'Helen']<br>names.each { |name| puts name }
+    </p>
+  	<p>In Ruby there is the <b>break</b> statement that enables you to terminates a method with an associated block if called within the block (with the method returning nil).</p>
+  	<p>
+  		for i in 0..5<br>if i > 2 then<br>break<br>end<br>puts "Value of local variable is #{i}"
+        <br>end
+  	</p>
+<div class="verticalLine"></div>
+  </div>
+  <div id="javaScript">
+  	<p>Loops in JavaScript are used to execute the same block of code a specified number of times or while a specified condition is true. Very often when writing code you want the same block of code to run over and over again in a row. Instead of writing the same script over and over again.</p>
+  	<p>
+  	 In JavaScript there are two different kinds of loops.<br><b>for loops</b> loop through a block of code a specified number of times.<br><b>while loops</b> loop through a block of code while a specified condition is true. 
+  	</p>
+  	<p>
+  		The <b>for loop</b> is used when you know in advance how many times the script should run. 
+  	</p>
+  	<p>
+  	 for (var=start_value;var &lt; value;var=var+increment)
+  	 {
+  	 code to be executed
+  	 }
+  	</p>
+  	<p>
+  		for (i=0; i &lt; 10; i++) { document.write("The number is" + i)     }
+
+  	</p>
+  	<p>
+  	Explanation: The exampe above defines a loop that starts with zero, the loop will continue to run as long as i is less than ten, i will increase by one each time the loop runs.  
+  	</p>
+  	<p>
+  		The<b>for each...in</b>statement iterates a specified varibale over all values of object's properties. For each distinct property, a specified statement is exectued. 
+  	</p>
+  	<p>
+  		for each (variable in object) {statement}
+  	</p>
+  	<p>
+  	   The <b>while loop</b> is used when you don't know ahead of time how many time you want your loop to run. In other words, you want to loop to execute and continue executing while the specified condition is true. 
+  	</p>
+  	<p>
+  	   while (var &lt; end_value) do <br> puts("Inside the loop i = #$i" )<br> $i +=1 <br> end
+
+  	</p>
+  	<p>
+  		var i=0 </b> while (i&lt; 10) {do something...}
+  	</p>
+  	<p>
+  		The example above defines a loop that starts with i = 0, the loop will continue to run as long as i is less then ten, i will increase by one each time. 
+  	</p>
+  	<p>
+  		There's also the <b>do...while</b> loop which is a variant of the while loop. This loop will always execute a block of code ONCE, and then it will repeat as long as the specified condition is true. This loop will always be executed at least once, even if the condition is false, because the code is executed before the condition is tested. 
+  	</p>
+  	<p>
+  		do</b>{</b>code to be executed</b>}</b>while (var &lt; endvalue)
+  	</p>
+  	<p>
+  	   There's also the <b>for...in</b> statement used to iterate through the elements of an array or through the properties of an object. The code in the body of the for...in loop is executed once for each element/property.	
+  	</p>
+  	<p>for (variable in object)<br>{<br>code to be executed<br>}</p>
+    </div>
+  </div>
+</body>
+</html>
