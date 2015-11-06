@@ -6,8 +6,7 @@ background-color: beige;
 h1 {
 
 color:black;
-text-decoration: underline;
-position: center; 
+text-decoration: underline; 
 }
 
 h2 {
@@ -15,7 +14,7 @@ h2 {
 color: red;
 font-size: 18px;
 font-weight: bold;
-margin-left: 30em;
+margin-left: 34em;
 }
 
 
