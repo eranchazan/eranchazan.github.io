@@ -1,0 +1,61 @@
+h1	{
+color: purple;
+font-weight: bold;
+font-style: italic;
+font-family: sans-serif;
+margin: auto;
+text-align: center;
+padding: 20px;
+
+}
+h2 {
+color: red;
+font-weight: bold;
+position: center;
+float: center;
+}
+
+img {
+	margin-left: 40em;
+}
+
+
+h3{
+
+color: green;
+font-family: serif;
+margin-left:2em;
+}
+
+
+nav {
+
+font-size: 12px;
+color: blue;
+text-align: center;
+
+}
+
+p.line {
+
+  border-bottom: 1px solid gray;
+}
+
+
+footer {
+color: orange;
+text-align: center;
+}
+
+ body {
+background-color: aqua;
+
+ }
+
+
+img {
+margin-left: 34em;
+}
+
+
+
