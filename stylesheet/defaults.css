@@ -1,7 +1,6 @@
- body {
-background-color: lightblue;
-
- }
+body {
+background-color: aqua;
+}
 
 h1	{
 color: purple;
@@ -17,21 +16,7 @@ h2 {
 color: red;
 font-weight: bold;
 position: center;
-float: center;
 }
-
-img {
-	margin-left: 40em;
-}
-
-
-h3{
-
-color: green;
-font-family: serif;
-margin-left:2em;
-}
-
 
 nav {
 
@@ -51,10 +36,3 @@ footer {
 color: orange;
 text-align: center;
 }
-
-
-
-img {
-margin-left: 34em;
-}
-
