@@ -3,7 +3,11 @@ background-color: aqua;
 }
 img {
 margin-top: 300px;
-margin-left: 500px
+margin-left: 500px;
+}
+
+a {
+margin-left: 500px;
 }
 
 h1	{
