@@ -1,0 +1,54 @@
+
+body {
+background-color: aqua;
+}
+
+table, th , td {
+	border: 1px solid green;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left:300px;
+    font-size: 24px;
+    background-color: yellow;
+	}
+
+h1	{
+color: purple;
+font-weight: bold;
+font-style: italic;
+font-family: sans-serif;
+margin: auto;
+text-align: center;
+padding: 20px;
+
+}
+h2 {
+color: red;
+font-weight: bold;
+position: center;
+}
+
+p {
+float: left;
+width: 50%;
+}
+
+
+img {
+float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
